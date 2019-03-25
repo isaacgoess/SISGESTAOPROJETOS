@@ -1,0 +1,100 @@
+F:\classroom\projects\MyTasks\bin\MyTasks.dll.config
+F:\classroom\projects\MyTasks\bin\MyTasks.dll
+F:\classroom\projects\MyTasks\bin\MyTasks.pdb
+F:\classroom\projects\MyTasks\bin\Antlr3.Runtime.dll
+F:\classroom\projects\MyTasks\bin\Microsoft.Web.Infrastructure.dll
+F:\classroom\projects\MyTasks\bin\Newtonsoft.Json.dll
+F:\classroom\projects\MyTasks\bin\System.Web.Helpers.dll
+F:\classroom\projects\MyTasks\bin\System.Web.Mvc.dll
+F:\classroom\projects\MyTasks\bin\System.Web.Optimization.dll
+F:\classroom\projects\MyTasks\bin\System.Web.Razor.dll
+F:\classroom\projects\MyTasks\bin\System.Web.WebPages.Deployment.dll
+F:\classroom\projects\MyTasks\bin\System.Web.WebPages.dll
+F:\classroom\projects\MyTasks\bin\System.Web.WebPages.Razor.dll
+F:\classroom\projects\MyTasks\bin\WebGrease.dll
+F:\classroom\projects\MyTasks\bin\System.Web.Helpers.xml
+F:\classroom\projects\MyTasks\bin\System.Web.Mvc.xml
+F:\classroom\projects\MyTasks\bin\System.Web.Optimization.xml
+F:\classroom\projects\MyTasks\bin\System.Web.Razor.xml
+F:\classroom\projects\MyTasks\bin\System.Web.WebPages.xml
+F:\classroom\projects\MyTasks\bin\System.Web.WebPages.Deployment.xml
+F:\classroom\projects\MyTasks\bin\System.Web.WebPages.Razor.xml
+F:\classroom\projects\MyTasks\bin\Newtonsoft.Json.xml
+F:\classroom\projects\MyTasks\bin\Antlr3.Runtime.pdb
+F:\classroom\projects\MyTasks\obj\Debug\MyTasks.csprojResolveAssemblyReference.cache
+F:\classroom\projects\MyTasks\obj\Debug\MyTasks.dll
+F:\classroom\projects\MyTasks\obj\Debug\MyTasks.pdb
+F:\classroom\projects\MyTasks\bin\EntityFramework.dll
+F:\classroom\projects\MyTasks\bin\EntityFramework.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\MyTasks.dll.config
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\MyTasks.dll
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\MyTasks.pdb
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\Newtonsoft.Json.dll
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\EntityFramework.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\System.Web.Helpers.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\System.Web.Mvc.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\System.Web.Optimization.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\System.Web.Razor.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\System.Web.WebPages.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\System.Web.WebPages.Razor.xml
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\bin\Antlr3.Runtime.pdb
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\obj\Debug\MyTasks.csprojResolveAssemblyReference.cache
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\obj\Debug\MyTasks.dll
+C:\Users\SrikanthPragada\Dropbox\projects\MyTasks\obj\Debug\MyTasks.pdb
+C:\_mvc\mytasks\MyTasks\bin\MyTasks.dll.config
+C:\_mvc\mytasks\MyTasks\bin\MyTasks.dll
+C:\_mvc\mytasks\MyTasks\bin\MyTasks.pdb
+C:\_mvc\mytasks\MyTasks\bin\Microsoft.Web.Infrastructure.dll
+C:\_mvc\mytasks\MyTasks\bin\Newtonsoft.Json.dll
+C:\_mvc\mytasks\MyTasks\bin\System.Web.Mvc.dll
+C:\_mvc\mytasks\MyTasks\bin\EntityFramework.xml
+C:\_mvc\mytasks\MyTasks\bin\Microsoft.Web.Infrastructure.xml
+C:\_mvc\mytasks\MyTasks\bin\System.Web.Helpers.xml
+C:\_mvc\mytasks\MyTasks\bin\System.Web.Optimization.xml
+C:\_mvc\mytasks\MyTasks\bin\System.Web.Razor.xml
+C:\_mvc\mytasks\MyTasks\bin\System.Web.WebPages.xml
+C:\_mvc\mytasks\MyTasks\bin\System.Web.WebPages.Deployment.xml
+C:\_mvc\mytasks\MyTasks\bin\System.Web.WebPages.Razor.xml
+C:\_mvc\mytasks\MyTasks\bin\Antlr3.Runtime.pdb
+C:\_mvc\mytasks\MyTasks\obj\Debug\MyTasks.csprojResolveAssemblyReference.cache
+C:\_mvc\mytasks\MyTasks\obj\Debug\MyTasks.dll
+C:\_mvc\mytasks\MyTasks\obj\Debug\MyTasks.pdb
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\MyTasks.dll.config
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\MyTasks.dll
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\MyTasks.pdb
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\Newtonsoft.Json.dll
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\EntityFramework.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\System.Web.Helpers.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\System.Web.Mvc.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\System.Web.Optimization.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\System.Web.Razor.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\System.Web.WebPages.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\System.Web.WebPages.Razor.xml
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\bin\Antlr3.Runtime.pdb
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\obj\Debug\MyTasks.csprojResolveAssemblyReference.cache
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\obj\Debug\MyTasks.csproj.CoreCompileInputs.cache
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\obj\Debug\MyTasks.dll
+C:\Users\Alisson Lima\source\repos\mytasks\MyTasks\obj\Debug\MyTasks.pdb
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\MyTasks.dll.config
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\MyTasks.dll
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\MyTasks.pdb
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\Newtonsoft.Json.dll
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\EntityFramework.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\System.Web.Helpers.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\System.Web.Mvc.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\System.Web.Optimization.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\System.Web.Razor.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\System.Web.WebPages.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\System.Web.WebPages.Razor.xml
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\bin\Antlr3.Runtime.pdb
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.csprojResolveAssemblyReference.cache
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.csproj.CoreCompileInputs.cache
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.dll
+C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.pdb
