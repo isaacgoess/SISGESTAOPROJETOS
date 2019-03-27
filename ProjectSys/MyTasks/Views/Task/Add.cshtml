@@ -1,19 +1,19 @@
 ﻿@model MyTasks.Models.Task
 
 @{
-    ViewBag.Title = "Editar Tarefa";
+    ViewBag.Title = "Adicionar Tarefa";
 }
 
-<h2>Editar Tarefa</h2>
+<h2>Adicionar Tarefa</h2>
 <hr />
 @using (Html.BeginForm())
 {
     <div class="form-horizontal">
-        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.ProjectId)
         <div class="form-group">
             @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.Title, new { required = "required", size = "30" })
+                @Html.TextBoxFor(model => model.Title, new { required = "required" })
                 @Html.ValidationMessageFor(model => model.Title)
             </div>
         </div>
@@ -21,7 +21,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.DueDate, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBox("DueDate", Model.DueDateString, new { size = "10" })
+                @Html.EditorFor(model => model.DueDate)
                 @Html.ValidationMessageFor(model => model.DueDate)
             </div>
         </div>
@@ -29,25 +29,26 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Importance, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.RadioButton("Importance", "b") Baixa
-                @Html.RadioButton("Importance", "n") Normal
-                @Html.RadioButton("Importance", "u") Urgente
+                @Html.RadioButton("Importance", "b", false) Baixa
+                @Html.RadioButton("Importance", "n", true) Normal
+                @Html.RadioButton("Importance", "u", false) Urgente
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Status, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.RadioButton("Status", "i") A iniciar
-                @Html.RadioButton("Status", "a") Em andamento
-                @Html.RadioButton("Status", "c") Concluída
+                @Html.RadioButton("Status", "i", true) A iniciar
+                @Html.RadioButton("Status", "a", false) Em andamento
+                @Html.RadioButton("Status", "c", false) Concluída
             </div>
         </div>
 
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Submeter" class="btn btn-primary" />
+                <input type="submit" value="Criar Tarefa" class="btn btn-primary" />
+                @Html.ActionLink("Cancelar", "Home", "User", null, new { @class = "btn-primary btn" })
             </div>
         </div>
 

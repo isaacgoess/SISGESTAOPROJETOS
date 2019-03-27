@@ -10,123 +10,181 @@ using MyTasks.Models;
 
 namespace MyTasks.Controllers
 {
+    [Authorize]
     public class TaskController : Controller
     {
-        private MyTasksContext db = new MyTasksContext();
-
-        // GET: Task
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Add(int id)
         {
-            var tasks = db.Tasks.Include(t => t.Project);
-            return View(tasks.ToList());
+            TaskModel model = new TaskModel();
+            model.ProjectId = id;
+            return View(model);
         }
 
-        // GET: Task/Details/5
-        public ActionResult Details(int? id)
+        [HttpPost]
+        public ActionResult Add(TaskModel model)
         {
-            if (id == null)
+            TempData["message"] = "";
+
+            if (ModelState.IsValid)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                try
+                {
+
+                    Task task = new Task
+                    {
+                        Title = model.Title,
+                        AddedOn = DateTime.Now,
+                        Importance = model.Importance,
+                        Status = model.Status,
+                        ProjectId = model.ProjectId
+                    };
+
+                    if (model.DueDate != null && model.DueDate.Length > 0)
+                        task.DueDate = DateTime.Parse(model.DueDate);
+                    else
+                        task.DueDate = null;
+
+                    using (MyTasksContext ctx = new MyTasksContext())
+                    {
+                        ctx.Tasks.Add(task);
+                        ctx.SaveChanges();
+                        TempData["message"] = "A tarefa foi adicionada com sucesso !";
+                    }
+                    return RedirectToAction("Add");
+
+                }
+                catch (Exception ex)
+                {
+                    TempData["message"] = "A tarefa não pode ser adicionada.";
+                    System.Web.HttpContext.Current.Trace.Write("TaskController.Add() --> " + ex.Message);
+                    return View(model);
+                }
             }
-            Task task = db.Tasks.Find(id);
-            if (task == null)
+            else
             {
-                return HttpNotFound();
+                TempData["message"] = "Informe um valor válido !";
+                return View(model);
             }
-            return View(task);
+
+        } // Add
+
+        [HttpGet]
+        public ActionResult List(int id)
+        {
+
+            // get list of tasks in a project
+            using (MyTasksContext ctx = new MyTasksContext())
+            {
+                var project = (from p in ctx.Projects
+                               where p.Id == id
+                               select p).SingleOrDefault();
+
+                ViewBag.ProjectTitle = project.Title;
+
+                var tasks = from t in ctx.Tasks.ToList<Task>()
+                            where t.ProjectId == id
+                            select t;
+
+                return View(tasks);
+            }
         }
 
-        // GET: Task/Create
-        public ActionResult Create()
+
+        [HttpGet]
+        public ActionResult Delete(int id)
         {
-            ViewBag.ProjectId = new SelectList(db.Projects, "Id", "Title");
+            using (MyTasksContext ctx = new MyTasksContext())
+            {
+                var task = (from t in ctx.Tasks
+                            where t.Id == id
+                            select t).SingleOrDefault();
+
+                var projectid = task.ProjectId;
+                ctx.Tasks.Remove(task);
+                ctx.SaveChanges();
+
+                return RedirectToAction("List", new { Id = projectid });
+            }
+        }
+
+        [HttpGet]
+        public ActionResult Details(int id)
+        {
+            using (MyTasksContext ctx = new MyTasksContext())
+            {
+                var task = (from t in ctx.Tasks.Include("Project")
+                            where t.Id == id
+                            select t).SingleOrDefault();
+
+                return View(task);
+            }
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            using (MyTasksContext ctx = new MyTasksContext())
+            {
+                var task = (from t in ctx.Tasks
+                            where t.Id == id
+                            select t).SingleOrDefault();
+
+                return View(task);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Task newTask)
+        {
+            using (MyTasksContext ctx = new MyTasksContext())
+            {
+                var task = (from t in ctx.Tasks
+                            where t.Id == newTask.Id
+                            select t).SingleOrDefault();
+
+                try
+                {
+                    task.Title = newTask.Title;
+                    task.DueDate = newTask.DueDate;
+                    task.Importance = newTask.Importance;
+                    task.Status = newTask.Status;
+
+                    ctx.SaveChanges();
+
+                    TempData["message"] = "A tarefa foi atualizada com sucesso !";
+                }
+                catch (Exception ex)
+                {
+                    System.Web.HttpContext.Current.Trace.Write("TaskController.Edit() --> " + ex.Message);
+                    TempData["message"] = "A tarefa não foi atualizada !";
+                }
+
+                return View(task);
+            }// using 
+        } // Edit 
+
+        [HttpGet]
+        public ActionResult SearchForm()
+        {
+
             return View();
         }
 
-        // POST: Task/Create
-        // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
-        // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,AddedOn,DueDate,Importance,Status,ProjectId")] Task task)
+        public ActionResult Search(string title)
         {
-            if (ModelState.IsValid)
+            using (MyTasksContext ctx = new MyTasksContext())
             {
-                db.Tasks.Add(task);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+                var tasks = from t in ctx.Tasks.Include("Project").ToList<Task>()
+                            where t.Project.UserId == Int32.Parse(Session["userid"].ToString())
+                                        && t.Title.ToUpper().Contains(title.ToUpper())
+                            orderby t.DueDate
+                            select t;
 
-            ViewBag.ProjectId = new SelectList(db.Projects, "Id", "Title", task.ProjectId);
-            return View(task);
+                return PartialView("SearchResults", tasks);
+            }
         }
 
-        // GET: Task/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Task task = db.Tasks.Find(id);
-            if (task == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.ProjectId = new SelectList(db.Projects, "Id", "Title", task.ProjectId);
-            return View(task);
-        }
-
-        // POST: Task/Edit/5
-        // Para se proteger de mais ataques, ative as propriedades específicas a que você quer se conectar. Para 
-        // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,AddedOn,DueDate,Importance,Status,ProjectId")] Task task)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(task).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.ProjectId = new SelectList(db.Projects, "Id", "Title", task.ProjectId);
-            return View(task);
-        }
-
-        // GET: Task/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Task task = db.Tasks.Find(id);
-            if (task == null)
-            {
-                return HttpNotFound();
-            }
-            return View(task);
-        }
-
-        // POST: Task/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            Task task = db.Tasks.Find(id);
-            db.Tasks.Remove(task);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
     }
 }

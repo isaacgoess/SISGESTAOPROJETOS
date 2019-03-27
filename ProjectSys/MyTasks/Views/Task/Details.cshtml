@@ -1,11 +1,5 @@
 ﻿@model MyTasks.Models.Task
 
-@{
-    ViewBag.Title = "Details";
-}
-
-<h2>Details</h2>
-
 <div>
     <h4>Task</h4>
     <hr />
@@ -61,6 +55,7 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Deletar", "Delete", new { id = Model.Id }, new { @class = "btn btn-primary", onclick = "return confirm('Deseja excluir esta tarefa ?')" })
+    @Html.ActionLink("Listar Tarefas", "List", new { id = Model.ProjectId }, new { @class = "btn btn-primary" })
 </p>

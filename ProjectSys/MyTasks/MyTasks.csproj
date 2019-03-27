@@ -256,11 +256,12 @@
     <Content Include="Views\User\Home.cshtml" />
     <Content Include="Views\User\ChangePassword.cshtml" />
     <Content Include="Views\Project\Edit.cshtml" />
-    <Content Include="Views\Task\Create.cshtml" />
-    <Content Include="Views\Task\Delete.cshtml" />
+    <Content Include="Views\Task\Add.cshtml" />
     <Content Include="Views\Task\Details.cshtml" />
     <Content Include="Views\Task\Edit.cshtml" />
-    <Content Include="Views\Task\Index.cshtml" />
+    <Content Include="Views\Task\List.cshtml" />
+    <Content Include="Views\Task\SearchForm.cshtml" />
+    <Content Include="Views\Task\SearchResults.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
