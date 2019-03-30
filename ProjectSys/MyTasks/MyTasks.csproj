@@ -152,6 +152,7 @@
     <Compile Include="Models\Task.cs">
       <DependentUpon>MyTasks.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TaskModel.cs" />
     <Compile Include="Models\User.cs">
       <DependentUpon>MyTasks.tt</DependentUpon>
     </Compile>
