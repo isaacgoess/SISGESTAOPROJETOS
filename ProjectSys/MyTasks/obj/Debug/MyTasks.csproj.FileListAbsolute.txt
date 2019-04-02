@@ -163,3 +163,25 @@ C:\Users\Isaac Silva\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\D
 C:\Users\Isaac Silva\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.csproj.CopyComplete
 C:\Users\Isaac Silva\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.dll
 C:\Users\Isaac Silva\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.pdb
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\MyTasks.dll.config
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\MyTasks.dll
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\MyTasks.pdb
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\EntityFramework.dll
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\EntityFramework.SqlServer.dll
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\Newtonsoft.Json.dll
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\EntityFramework.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\EntityFramework.SqlServer.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Helpers.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Mvc.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Optimization.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Razor.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.WebPages.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.WebPages.Razor.xml
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\Antlr3.Runtime.pdb
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.csprojAssemblyReference.cache
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.csproj.CoreCompileInputs.cache
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.csproj.CopyComplete
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.dll
+C:\Users\Fernandes\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.pdb
