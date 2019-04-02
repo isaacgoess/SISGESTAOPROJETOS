@@ -21,6 +21,32 @@ namespace MyTasks.Test
             Assert.NotEqual(0, user.Id);
             Assert.NotEqual(" ", user.Email);
             Assert.NotEqual(" ", user.Password);
+            Assert.NotEqual("$", user.Email);
+            Assert.NotEqual("*", user.Email);
+            Assert.NotEqual("#", user.Email);
+            Assert.NotEqual("+", user.Email);
+            Assert.NotEqual("=", user.Email);
+            Assert.NotEqual("/", user.Email);
+            Assert.NotEqual("[", user.Email);
+            Assert.NotEqual(",", user.Email);
+            Assert.NotEqual("$", user.Email);
+            Assert.NotEqual("!", user.Email);
+            Assert.NotNull(user.Email);
+            Assert.NotNull(user.Password);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
