@@ -33,7 +33,7 @@ namespace MyTasks.Test
             Assert.NotEqual("!", user.Email);
             Assert.NotNull(user.Email);
             Assert.NotNull(user.Password);
-            Assert.Equal(user.Password, user.Email);
+            Assert.NotEqual(user.Password, user.Email);
 
 
 
