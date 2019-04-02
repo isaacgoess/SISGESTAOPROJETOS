@@ -6,8 +6,9 @@ using Xunit;
 
 namespace MyTasks.Test
 {
-    class UserTest
+    public class UserTest
     {
+        [Fact]
         public void CadastrarUser()
         {
             var user = new User

@@ -5859,11 +5859,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS-master\\ProjectSys\\MyTasks.Test\\MyTasks.Test.csproj",
+      "projectUniqueName": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS\\ProjectSys\\MyTasks.Test\\MyTasks.Test.csproj",
       "projectName": "MyTasks.Test",
-      "projectPath": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS-master\\ProjectSys\\MyTasks.Test\\MyTasks.Test.csproj",
+      "projectPath": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS\\ProjectSys\\MyTasks.Test\\MyTasks.Test.csproj",
       "packagesPath": "C:\\Users\\024337012135\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS-master\\ProjectSys\\MyTasks.Test\\obj\\",
+      "outputPath": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS\\ProjectSys\\MyTasks.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5882,8 +5882,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS-master\\ProjectSys\\MyTasks\\MyTasks.csproj": {
-              "projectPath": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS-master\\ProjectSys\\MyTasks\\MyTasks.csproj"
+            "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS\\ProjectSys\\MyTasks\\MyTasks.csproj": {
+              "projectPath": "C:\\Users\\024337012135\\Documents\\GitHub\\SISGESTAOPROJETOS\\ProjectSys\\MyTasks\\MyTasks.csproj"
             }
           }
         }

@@ -7,7 +7,7 @@ namespace MyTasks.Test
     public class ProjectTest
     {
         [Fact]
-        public void CadastrarProjeto()
+        public void CadastrarProject()
         {
             var project = new Project
             {

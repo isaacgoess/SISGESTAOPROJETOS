@@ -1,10 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MyTasks.Models;
+using System;
+using Xunit;
 
 namespace MyTasks.Test
 {
-    class TaskTest
+    public class TaskTest
     {
+        [Fact]
+        public void CadastrarTask()
+        {
+            var task = new Task
+            {
+
+                Id = '9',
+                Title = "Projeto 2019"
+            };
+
+            Assert.NotEqual(0, task.Id);
+            Assert.NotEqual(" ", task.Title);
+
+        }
+
     }
 }
