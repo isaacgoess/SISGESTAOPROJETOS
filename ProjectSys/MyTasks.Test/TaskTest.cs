@@ -18,6 +18,9 @@ namespace MyTasks.Test
 
             Assert.NotEqual(0, task.Id);
             Assert.NotEqual(" ", task.Title);
+            Assert.NotNull(task.Title);
+
+
 
         }
 
