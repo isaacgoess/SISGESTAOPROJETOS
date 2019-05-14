@@ -98,3 +98,21 @@ C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.csprojRe
 C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.csproj.CoreCompileInputs.cache
 C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.dll
 C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasks\obj\Debug\MyTasks.pdb
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\MyTasks.dll.config
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\MyTasks.dll
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\MyTasks.pdb
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\Newtonsoft.Json.dll
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Mvc.dll
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\EntityFramework.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Helpers.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Optimization.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.Razor.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.WebPages.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.WebPages.Deployment.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\System.Web.WebPages.Razor.xml
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\bin\Antlr3.Runtime.pdb
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.csprojResolveAssemblyReference.cache
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.csproj.CoreCompileInputs.cache
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.dll
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasks\obj\Debug\MyTasks.pdb

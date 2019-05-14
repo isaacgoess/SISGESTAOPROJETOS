@@ -30,3 +30,7 @@ C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.
 C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.csproj.CoreCompileInputs.cache
 C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.dll
 C:\Users\Alisson Lima\source\repos\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.pdb
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.csprojResolveAssemblyReference.cache
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.csproj.CoreCompileInputs.cache
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.dll
+C:\Users\japinho.CASSIND\Documents\GitHub\SISGESTAOPROJETOS\ProjectSys\MyTasksTest\obj\Debug\MyTasksTest.pdb
