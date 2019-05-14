@@ -20,39 +20,37 @@
         <th>
             @Html.DisplayNameFor(model => model.Status)
         </th>
-
+       
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Project.Title)
-            </td>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Project.Title)
+        </td>
 
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @item.AddedOn.Value.ToString("dd/MM/yyyy")
-            </td>
-            <td>
-                @item.DueDateString
-
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImportanceString)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StatusString)
-            </td>
-            <td>
-                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { onclick = "return confirm('Deseja deletar esta tarefa ?')" })
-            </td>
-        </tr>
-    }
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @item.AddedOn.Value.ToString("dd/MM/yyyy")
+        </td>
+        <td>
+           @item.DueDateString
+                   
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImportanceString)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusString)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.Id } , new { onclick = "return confirm('Deseja deletar esta tarefa ?')" } )
+        </td>
+    </tr>
+}
 
 </table>
-

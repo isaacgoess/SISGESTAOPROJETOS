@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using MyTasks.Models;
+using System;
 using System.Linq;
-using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using MyTasks.Models;
 
 namespace MyTasks.Controllers
 {
@@ -40,7 +35,7 @@ namespace MyTasks.Controllers
                         ProjectId = model.ProjectId
                     };
 
-                    if (model.DueDate != null && model.DueDate.Length > 0)
+                    if (model.DueDate != null &&  model.DueDate.Length > 0)
                         task.DueDate = DateTime.Parse(model.DueDate);
                     else
                         task.DueDate = null;
@@ -76,9 +71,9 @@ namespace MyTasks.Controllers
             // get list of tasks in a project
             using (MyTasksContext ctx = new MyTasksContext())
             {
-                var project = (from p in ctx.Projects
-                               where p.Id == id
-                               select p).SingleOrDefault();
+                var project =(from p in ctx.Projects
+                              where p.Id == id
+                              select p).SingleOrDefault();
 
                 ViewBag.ProjectTitle = project.Title;
 
@@ -176,9 +171,9 @@ namespace MyTasks.Controllers
         {
             using (MyTasksContext ctx = new MyTasksContext())
             {
-                var tasks = from t in ctx.Tasks.Include("Project").ToList<Task>()
-                            where t.Project.UserId == Int32.Parse(Session["userid"].ToString())
-                                        && t.Title.ToUpper().Contains(title.ToUpper())
+                var tasks = from t in ctx.Tasks.Include ("Project").ToList<Task>()
+                            where t.Project.UserId ==  Int32.Parse( Session["userid"].ToString ())
+                                        &&  t.Title.ToUpper().Contains(title.ToUpper())
                             orderby t.DueDate
                             select t;
 

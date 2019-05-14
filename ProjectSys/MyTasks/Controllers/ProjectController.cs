@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using MyTasks.Models;
+using System;
 using System.Linq;
-using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using MyTasks.Models;
 
 namespace MyTasks.Controllers
 {
@@ -127,7 +122,7 @@ namespace MyTasks.Controllers
                     }
                     return RedirectToAction("Home", "User");
                 }
-
+                
             }
             catch (Exception ex)
             {

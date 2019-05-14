@@ -1,9 +1,0 @@
-* Sistema deve permitir que o usuario realize cadastro
-- O usuário necessita apenas de email para realizar o seu cadastro;
-* Sistema deve permitir que o Usuario cadastre projetos
-- O projeto deverá apresentar titulo;
-* Sistema deve permitir que o Usuario adicione tarefas
-- A Tarefa deverá apresentar Titulo;
-- A Tarefa deverá apresentar Data Inicio e Data Fim;
-- A Tarefa deverá apresentar Alerta e Nível de Criticidade;
-* O Sistema deverá finalizar a tarefa no tempo determinado;
