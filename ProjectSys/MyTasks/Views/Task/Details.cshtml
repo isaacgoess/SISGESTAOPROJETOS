@@ -3,63 +3,111 @@
 @{
     ViewBag.Title = "Detalhes da tarefa";
 }
+<html>
+<head>
+    <title>Converter uma Tabela para PDF usando JavaScript</title>
+    <style>
+        table {
+            width: 300px;
+            font: 20px Calibri;
+        }
 
-<h2>Tarefas - Detalhes</h2>
-<hr />
-<div>
+        table, th, td {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tarefas - Detalhes</h2>
+    <hr />
+    <div>
 
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AddedOn)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.AddedOn)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AddedOn)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.AddedOn)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DueDate)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.DueDate)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DueDate)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.DueDate)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Importance)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Importance)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ImportanceString)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.ImportanceString)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.StatusString)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.StatusString)
+            </dd>
 
-        <dt>
-            Projeto
-        </dt>
+            <dt>
+                Projeto
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Project.Title )
-        </dd>
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" }) 
-    @Html.ActionLink("Deletar", "Delete", new { id = Model.Id }, new { @class = "btn btn-primary", onclick = "return confirm('Deseja excluir esta tarefa ?')" }) 
-    @Html.ActionLink("Listar Tarefas", "List", new { id = Model.ProjectId }, new { @class = "btn btn-primary" })
-</p>
+            <dd>
+                @Html.DisplayFor(model => model.Project.Title)
+            </dd>
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Deletar", "Delete", new { id = Model.Id }, new { @class = "btn btn-primary", onclick = "return confirm('Deseja excluir esta tarefa ?')" })
+        @Html.ActionLink("Listar Tarefas", "List", new { id = Model.ProjectId }, new { @class = "btn btn-primary" })
+    </p>
+    <p>
+        <input type="button" value="Criar PDF" id="btnImprimir" onclick="CriaPDF()" />
+    </p>
+</body>
+<script>
+    function CriaPDF() {
+        var minhaTabela = document.getElementById('tabela').innerHTML;
+
+        var style = "<style>";
+        style = style + "table {width: 100%;font: 20px Calibri;}";
+        style = style + "table, th, td {border: solid 1px #DDD; border-collapse: collapse;";
+        style = style + "padding: 2px 3px;text-align: center;}";
+        style = style + "</style>";
+
+        // CRIA UM OBJETO WINDOW
+        var win = window.open('', '', 'height=700,width=700');
+
+        win.document.write('<html><head>');
+        win.document.write('<title>Empregados</title>');   // <title> CABEÇALHO DO PDF.
+        win.document.write(style);                       // INCLUI UM ESTILO NA TAB HEAD
+        win.document.write('</head>');
+        win.document.write('<body>');
+        win.document.write(minhaTabela);                   // O CONTEUDO DA TABELA DENTRO DA TAG BODY
+        win.document.write('</body></html>');
+
+        win.document.close(); 	                            // FECHA A JANELA
+
+        win.print();                                        // IMPRIME O CONTEUDO
+    }
+</script>
+</html>

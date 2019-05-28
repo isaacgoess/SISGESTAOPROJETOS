@@ -28,5 +28,7 @@ namespace MyTasks.Models
         public DbSet<Project> Projects { get; set; }
         public DbSet<Task> Tasks { get; set; }
         public DbSet<User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<MyTasks.Models.TaskModel> TaskModels { get; set; }
     }
 }
