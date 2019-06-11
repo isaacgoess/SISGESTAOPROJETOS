@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Net;
-using System.Web;
 using PagedList;
 using Rotativa;
-using System.Web.Mvc;
 using MyTasks.Models;
 using Rotativa.MVC;
 
@@ -23,7 +19,7 @@ namespace MyTasks.Controllers
         private MyTasksContext db = new MyTasksContext();
         public ActionResult ListagemAtividades(int? pagina, Boolean? gerarPDF)
         {
-            var listagemTask = db.Tasks.OrderBy(n => n.ProjectId).ToList<Task>();
+            var listagemTask = db.Tasks.OrderBy(n => n.Id).ToList<Task>();
 
             if (gerarPDF != true)
             {
